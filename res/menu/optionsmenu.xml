@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/_helpmenuitem"
+          android:title="@string/helpmenuitemtext"
+          android:showAsAction="always" />
+     <item android:id="@+id/_aboutmenuitem"
+          android:title="@string/aboutmenuitemtext"/>
+      <item android:id="@+id/_likemenuitem"
+          android:title="@string/likemenuitemtext"/>
+      
+</menu>

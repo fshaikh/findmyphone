@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, FindMyPhoneActivity!</string>
+    <string name="app_name">FindMyPhone</string>
+    <string name="senderphonenumber_hinttext">Enter Sender/Caller number</string>
+    <string name="pinhinttext">Enter SMS Pin Text</string>
+	<string name="savebuttontext">Save</string>
+	<string name="cancelbuttontext">Revert</string>
+	<string name="helpmenuitemtext">Help</string>
+	<string name="aboutmenuitemtext">About</string>
+	<string name="likemenuitemtext">Like</string>
+	<string name="sendlocationtext">Send Location by SMS</string>
+	
+</resources>

@@ -1,0 +1,6 @@
+1. Trying to use context/activity types in SharedPreferencesStorage. Not working. Need to find out how
+   to work with SharedPreferences type outside of an Activity or where Context is not available. Tried using getApplicationContext
+   and passing Activity object. But both didnt work. For now storage functionality is scattered in the caller classes.
+   2. Validation on the activity view
+   4. Helper methods to get/set ui
+   5. Missed call functionality
