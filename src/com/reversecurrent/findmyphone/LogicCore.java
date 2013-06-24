@@ -43,4 +43,11 @@ public class LogicCore {
 				return false;
 		return viewModel.SendLocation;
 	}
+	
+	public static boolean IsDestinationSMSAddressable(String address)
+	{
+		if(android.telephony.PhoneNumberUtils.isWellFormedSmsAddress(address))
+			return true;
+		return false;
+	}
 }

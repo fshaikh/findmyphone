@@ -52,8 +52,11 @@ public class LocationHelper {
 		{
 			if(LogicCore.IsSendByLocationEnabled(context))
 			{
-				LocationHelper.RegisterLocationReceiver(context);
-				LocationHelper.StartService(context, model,true);
+				if(LogicCore.IsDestinationSMSAddressable(model.SenderNumber))
+				{
+					LocationHelper.RegisterLocationReceiver(context);
+					LocationHelper.StartService(context, model,true);
+				}
 			}
 		}
 		else

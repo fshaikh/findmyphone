@@ -28,16 +28,11 @@ public class SMSReceiver extends BroadcastReceiver {
 					SmsMessage message = SmsMessage.createFromPdu((byte[])pdus[i]);
 					String sender = message.getOriginatingAddress();
 					String body = message.getMessageBody();
-					Toast.makeText(context, sender + " sent " + body, Toast.LENGTH_LONG).show();
-					
-					
-					Toast.makeText(context, "setNumber : " + viewModel.SenderNumber, Toast.LENGTH_LONG).show();
-					
+				
 					if(android.telephony.PhoneNumberUtils.compare(sender, viewModel.SenderNumber))
 					{
 						if(body.compareTo(viewModel.Pin) == 0)
 						{
-							Toast.makeText(context, sender + " sent " + body, Toast.LENGTH_LONG).show();
 							LogicCore.DoLogic(context);
 							// get the phone's location and send sms to the same number
 							LocationModel model = new LocationModel();
